@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Serif+Pro&display=swap');
+
+/* General setup */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+    float: left;
+    width: 50%;
+}
+
+aside {
+    float: left;
+    width: 30%;
+}
+
+nav {
+    float: left;
+    width: 20%;
+}
+
+footer {
+    clear: both;
+}
+
+header, section, aside, nav, footer {
+    padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+html {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 10px;
+}
+
+h1, h2 {
+    font-family: 'Roboto Slab', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+body {
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+header h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+section h2 + p {
+    text-indent: 20px;
+}
+
+a {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: darkblue;
+}
+
+a:hover {
+    text-decoration: none;
+    background: yellow;
+}
+
+a:focus {
+    text-decoration: none;
+    background-color: darkblue;
+    color: yellow;
+}
+
+a[href*='http'] {
+    background: url("../images/external-link-52.png") 100% 0 no-repeat;
+    background-size: 1em 1em;
+    padding-right: 1.2em;
+}
+
+a[href*='http']:hover {
+    color: blueviolet;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+ol li {
+    list-style-type: upper-roman;
+}
+
+nav ul li {
+    list-style-type: none;
+    border: 2px solid green;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0.5em 0;
+    padding: 0 0;
+}
+
+nav ul li a:any-link {
+    all: unset;
+    display: inline-block;
+    padding: 1.5em 1.5em;
+    cursor: pointer;
+}
